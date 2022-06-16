@@ -6,47 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple</title>
     <style>
+
+      body {
+        margin : 0;
+      }
       h1 { /* block level element */
         font-size : 45px;
         text-align : center;
-        border : 1px solid black;
-        padding : 10px;
-        width : 300px;
-        margin : 0 auto;
-        /* display : inline; 디스플레이 속성 변경*/ 
+        border-bottom : 1px solid black;
+        margin : 0;
+        padding : 20px;
       }
       
-
-      #active1 {
-        color : red;
-      }
-
-      #active2 {
-        color : yellow;
-      }
-
-      .saw {
-        color : blue;
-      }
-
-
       a { /* inline level element */
         color : black;
         text-decoration : none;
-        border : 1px solid red;
       }
 
-      
+      ol {
+        border-right : 1px solid black;
+        width : 100px;
+        margin : 0px;
+        padding : 20px;
+      }
+
+
     </style>
 </head>
 <body>
 <h1><a href="index.html">Apple</a></h1>
+
+
 <ol>
   <li><a href="Iphone.html" class="saw">Iphone</a></li>
   <li><a href="Ipad.html" class="saw" id="active1">Ipad</a></li>
   <li><a href="MacBook.html" class="saw" id="active2">Mac</a></li>
 </ol>
-
 
 </body>
 </html>
