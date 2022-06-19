@@ -7,15 +7,28 @@
     <title>Apple</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style>
+<body>
 <h1><a href="index.html">Apple</a></h1>
+
+
+<input id="night_day" type="button" value="night" onClick="
+if(document.querySelector('#night_day').value === 'night') {
+document.querySelector('body').style.backgroundColor = 'black';
+document.querySelector('body').style.color = 'white';
+document.querySelector('#night_day').value = 'day';
+} else {
+document.querySelector('body').style.backgroundColor = 'white';
+document.querySelector('body').style.color = 'black';
+document.querySelector('#night_day').value = 'night';
+}
+">
 <div id="grid">
   <ol>
-    <li><a href="Iphone.html" class="saw">Iphone</a></li>
-    <li><a href="Ipad.html" class="saw" id="active1">Ipad</a></li>
-    <li><a href="MacBook.html" class="saw" id="active2">Mac</a></li>
+    <li><a href="Iphone.html" class="saw1">Iphone</a></li>
+    <li><a href="Ipad.html" class="saw2">Ipad</a></li>
+    <li><a href="MacBook.html" class="saw3">Mac</a></li>
   </ol>
-  
+
   <div id="article">
   <h2>Introduce</h2>
   <p>
