@@ -11,15 +11,29 @@
 <h1><a href="index.html">Apple</a></h1>
 
 
-<input id="night_day" type="button" value="night" onClick="
-if(document.querySelector('#night_day').value === 'night') {
-document.querySelector('body').style.backgroundColor = 'black';
-document.querySelector('body').style.color = 'white';
-document.querySelector('#night_day').value = 'day';
-} else {
-document.querySelector('body').style.backgroundColor = 'white';
-document.querySelector('body').style.color = 'black';
-document.querySelector('#night_day').value = 'night';
+<input type="button" value="night" onclick="
+var target = document.querySelector('body');
+if(this.value === 'night') {
+target.style.backgroundColor = 'black';
+target.style.color = 'white';
+this.value = 'day';
+var a = document.querySelectorAll('a');
+  var i = 0;
+  while(i < a.length) {
+   a[i].style.color = 'white';
+   i++;
+}
+}
+else {
+target.style.backgroundColor = 'white';
+target.style.color = 'black';
+this.value = 'night';
+var a = document.querySelectorAll('a');
+var i = 0;
+while(i < a.length) {
+a[i].style.color = 'black';
+i++;
+}
 }
 ">
 <div id="grid">
@@ -36,6 +50,22 @@ document.querySelector('#night_day').value = 'night';
     하드웨어, 소프트웨어, 온라인 서비스를 디자인(설계), 개발, 제조[11](제작), 판매한다.
   </p>
   </div>
+  <input type="button" value="night" onclick="
+  var target = document.querySelector('body');
+  if(this.value > 'night') {
+  target.style.backgroundColor = 'black';
+  target.style.color = 'white';
+  this.value = 'day';
+  }
+  
+
+  else {
+  target.style.backgroundColor = 'white';
+  target.style.color = 'black';
+  this.value = 'night';
+  
+  }
+  ">
 </div>
 
 </body>
