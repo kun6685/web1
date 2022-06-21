@@ -6,35 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple</title>
     <link rel="stylesheet" href="style.css">
+  <script>
+    
+      function handler(self) {
+      var target = document.querySelector('body');
+      if(self.value === 'night') {
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      self.value = 'day';
+      var a = document.querySelectorAll('a');
+        var i = 0;
+        while(i < a.length) {
+        a[i].style.color = 'white';
+        i++;
+      }
+      }
+      else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      self.value = 'night';
+      var a = document.querySelectorAll('a');
+      var i = 0;
+      while(i < a.length) {
+      a[i].style.color = 'black';
+      i++;
+      }
+      }
+    }
+  </script>
 </head>
 <body>
 <h1><a href="index.html">Apple</a></h1>
 
 
 <input type="button" value="night" onclick="
-var target = document.querySelector('body');
-if(this.value === 'night') {
-target.style.backgroundColor = 'black';
-target.style.color = 'white';
-this.value = 'day';
-var a = document.querySelectorAll('a');
-  var i = 0;
-  while(i < a.length) {
-   a[i].style.color = 'white';
-   i++;
-}
-}
-else {
-target.style.backgroundColor = 'white';
-target.style.color = 'black';
-this.value = 'night';
-var a = document.querySelectorAll('a');
-var i = 0;
-while(i < a.length) {
-a[i].style.color = 'black';
-i++;
-}
-}
+handler(this);
 ">
 <div id="grid">
   <ol>
@@ -50,22 +56,6 @@ i++;
     하드웨어, 소프트웨어, 온라인 서비스를 디자인(설계), 개발, 제조[11](제작), 판매한다.
   </p>
   </div>
-  <input type="button" value="night" onclick="
-  var target = document.querySelector('body');
-  if(this.value > 'night') {
-  target.style.backgroundColor = 'black';
-  target.style.color = 'white';
-  this.value = 'day';
-  }
-  
-
-  else {
-  target.style.backgroundColor = 'white';
-  target.style.color = 'black';
-  this.value = 'night';
-  
-  }
-  ">
 </div>
 
 </body>
