@@ -10,6 +10,10 @@ h1 { /* block level element */
   padding : 20px;
 }
 
+a {
+  color : black;
+  text-decoration: none;
+}
 #grid {
   display : grid;
   grid-template-columns: 150px 1fr;
