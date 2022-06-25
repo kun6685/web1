@@ -6,48 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple</title>
     <link rel="stylesheet" href="style.css">
-  <script>
-
-      var Links = {
-        LinkSetColor(color) {
-          var a = document.querySelectorAll('a');
-          var i = 0;
-          while(i<a.length) {
-            a[i].style.color = color;
-            i++;
-          }
-        }
-      }
-      
-
-      var Body = {
-        BodySetColor : function (color) {
-        document.querySelector('body').style.color = color;
-      },
-
-        BackgroundSetColor : function (color) {
-          document.querySelector('body').style.backgroundColor = color;
-        }
-      }
-      
-      function handler(self) {
-      var target = document.querySelector('body');
-
-
-      if(self.value === 'night') {
-      Body.BackgroundSetColor('black');
-      Body.BodySetColor('white');
-      self.value = 'day';
-      Links.LinkSetColor('white');
-      }
-      else {
-      Body.BackgroundSetColor('white');
-      Body.BodySetColor('black');
-      self.value = 'night';
-      Links.LinkSetColor('black');
-      }
-    }
-  </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colors.js"></script>
 </head>
 <body>
 <h1><a href="index.html">Apple</a></h1>
