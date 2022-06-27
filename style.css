@@ -1,6 +1,21 @@
 body {
   margin : 0;
 }
+#handler {
+position : absolute;
+top : 1px;
+right : 1px;
+width : 50px;
+height : 30px;
+margin : 5px;
+background-color: transparent;
+border : 1px solid black;
+border-radius: 10%;
+}
+
+.btn {
+  text-align: right;
+}
 
 h1 { /* block level element */
   font-size : 45px;
