@@ -47,12 +47,12 @@ BtnHandler1.BtnColor('white');
 BtnHandler2.BtnBorder('1px solid white');
 document.querySelector('h1').style.borderBottom = '1px solid white';
 document.querySelector('#grid ol').style.borderRight = '1px solid white';
-if(matchMedia("screen and (max-width: 800px)").matches && (self.value === 'night' || self.value === 'day') ){
-  document.querySelector('h1').style.border = 'none';
-  document.querySelector('#grid ol').style.border = 'none';
+  if(matchMedia("screen and (max-width: 800px)")) {
+    document.querySelector('h1').style.borderBottom = 'none';
+    document.querySelector('#grid ol').style.borderRight = 'none';
   }
 }
-else {
+else if (self.value === 'day') {
 Body.BackgroundSetColor('white');
 Body.BodySetColor('black');
 self.value = 'night';
@@ -61,6 +61,10 @@ BtnHandler1.BtnColor('black');
 BtnHandler2.BtnBorder('1px solid black');
 document.querySelector('h1').style.borderBottom = '1px solid black';
 document.querySelector('#grid ol').style.borderRight = '1px solid black';
+  if(matchMedia("screen and (max-width: 800px)")) {
+    document.querySelector('h1').style.borderBottom = 'none';
+    document.querySelector('#grid ol').style.borderRight = 'none';
+  }
   }
 }
 
